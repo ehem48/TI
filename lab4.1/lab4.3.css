@@ -1,0 +1,79 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+
+}
+
+.poziom1, #strzalka, #student {
+    float: left;
+    position: relative;
+    background-color: blue;
+    margin: 0;
+    padding: 12px;
+    padding-top: 7px;
+    width: 140px;
+}
+
+.poziom1:hover, #strzalka:hover, #student:hover{
+
+    background-color: darkblue;
+    position: relative;
+}
+ul ul{
+    display: none;
+}
+
+
+.poziom2, .poziom3{
+    opacity: 0;
+}
+
+.poziom3{
+    display: none;
+    padding: 6px;
+    padding-left: 5px;
+    margin-top:-1em;
+    width:130%;
+}
+
+
+#mainmenu>li>ul>li{
+    position: relative;
+}
+
+#mainmenu>li>ul>li>ul{
+    position: absolute;
+    background-color: darkblue;
+    left: 100%;
+    width: 150%;
+}
+
+.poziom{
+    position: relative;
+    margin: 0;
+    padding: 7px;
+    padding-top: 7px;
+    /* border: 5px solid white; */
+}
+
+#strzalka:hover>.poziom2, #student:hover>.poziom2{
+        display: block;
+        background-color: darkblue;
+        border: 10px solid darkblue;
+        opacity: 1;
+}
+
+#kierunki:hover>.poziom3{
+    display: block;
+    opacity: 1;
+    background-color: darkgreen;
+}
+
+#student, #strzalka{
+    background-image:url('https://webkod.pl/images/down.png');
+    background-repeat:no-repeat;
+    background-position:98% center;
+}

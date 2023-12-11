@@ -1,0 +1,57 @@
+.logo{
+    width: 200px; 
+  height: 200px;
+  background-image: url('logo_barwne.png');
+  background-size: cover;
+  animation-name: zmiana;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.logo1{
+    width: 200px; 
+    height: 200px;
+    background-image: url('logo_barwne.png');
+    background-size: cover;
+    transition: transform 2s;
+    animation-name: powiekszanie;
+    animation-duration: 6s;
+}
+
+.logo2{
+    width: 200px; 
+    height: 200px;
+    background-image: url('logo_barwne.png');
+    background-size: cover;
+    animation-name: rotacja;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition: transform 2s;
+}
+
+.logo1:hover {
+    transform: scale(2);
+  }
+
+.logo2:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes zmiana{
+    0% {
+        background-image: url('logo_monochromatyczne.png');
+    }
+}
+
+
+@keyframes powiekszanie {
+    0% {
+        background-image: url('logo_monochromatyczne.png');
+    }
+}
+
+@keyframes rotacja {
+    0% {
+        background-image: url('logo_monochromatyczne.png');
+    }
+}

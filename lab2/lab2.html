@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <form action="" method="get">
+        <label>Podaj imie: </label><input type="text" placeholder="imie"><br>
+        <label>Podaj nazwisko: </label><input type="text" placeholder="nazwisko"><br>
+        <label>Podaj numer: </label><input type="number" placeholder="number"><br>
+        <label>Podaj email: </label><input type="email" placeholder="email"><br>
+        <label>Podaj wiadomosc: </label><textarea placeholder="wiadomosc" rows="5" cols="50"></textarea><br>
+        <button type="submit">Przeslij</button>
+        <button type="reset">Resetuj</button>
+    </form>
+</fieldset><br>
+    <fieldset>
+    <label>Typ zapytania</label>
+    <select id="contact" name="contact" multiple size="5">
+        <optgroup label="Podkarpackie">
+            <option value="ofer1">Rzeszów</option>
+            <option value="kontakt1">Nisko</option>
+            <option value="kontakt1">Zala</option>
+        </optgroup>
+        <optgroup label="Lubelskie">
+            <option value="problem1">Lublin</option>
+            <option disabled value="uzytkownik1">Nic</option>
+            <option disabled value="uzytkownik1">Kic</option>
+        </optgroup>
+    </select>
+    </fieldset>
+    <fieldset><legend>
+    <br><label>Zgody na przetwarzanie danych<br>
+        <input type="checkbox" name="wybor1" disabled value="opcja1" checked>Akceptuje regulamin
+    </label><br>
+    <label>
+        <input type="checkbox" name="wybor2" value="opcja2">Subskrybuj newseltter
+    </label>
+    </legend></fieldset><br>   
+    <fieldset><legend> 
+    <label>Powód zgłoszenia<br>
+        <input type="radio" name="wybor">Zgłoszenie problemu technicznego
+    </label><br>
+    <label>
+        <input type="radio" name="wybor">Propozycja współpracy
+    </label><br>
+    <label>
+        <input type="radio" name="wybor">Pytania dotyczące treści
+    </label><br>
+    <label>
+        <input type="radio" name="wybor">Zgłoszenie naduzycia
+    </label><br>
+    </legend>  </fieldset>
+</body>
+</html>

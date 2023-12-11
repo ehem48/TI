@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wyszukaj produkt</title>
+    <style>
+        body {
+            background-color: #5d4e49;
+            color: #e4d3ce;
+            font-family: Corbel;
+        }
+        button {
+            border-radius: 25px;
+            background-color: #414141;
+            color: #fbfbfb;
+        }
+        fieldset {
+            border-radius: 10px;
+        }
+      .odido {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+    </style>
+    <style>
+        body {
+            background-color: #0033A0;
+            font-family: "Open-Sans", sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        button {
+            background-color: #fefefe;
+            color: #0033A0;
+            padding: 5px 50px;
+        }
+        fieldset {
+            border-top: 20px solid #fefefe;
+            border-radius: 50px;
+        }
+        legend {
+            text-align: left;
+            margin-left: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <h1>Wyszukaj produkt</h1>
+      <br />
+      <input type="text" name="nazwa" placeholder="Nazwa produktu" />
+      <br />
+      <br />
+      <fieldset>
+        <br />
+        <legend>Cena</legend>
+        <span class="odido">od</span>
+        <input type="number" name="cena_od" placeholder="0,00" min="0,00" />
+        <span class="odido">do</span>
+        <input type="number" name="cena_do" placeholder="1000000,00" />
+        <span style="padding-left: 20px">
+          <select name="waluta">
+            <option value="pln">PLN</option>
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+          </select>
+        </span>
+        <br />
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Ocena produktu</legend>
+
+        <label>
+          <input type="radio" value="5star" name="star" /> 5,0 ⭐⭐⭐⭐⭐
+        </label>
+        <br />
+        <label>
+          <input type="radio" value="4star" name="star" /> 4,0 ⭐⭐⭐⭐
+        </label>
+        <br />
+        <label>
+          <input type="radio" value="3star" name="star" /> 3,0 ⭐⭐⭐
+        </label>
+        <br />
+        <label>
+          <input type="radio" value="2star" name="star" /> 2,0 ⭐⭐
+        </label>
+        <br />
+        <label> <input type="radio" value="1star" name="star" /> 1,0 ⭐ </label>
+        <br />
+      </fieldset>
+      <hr />
+      <br />
+      <label for="color"> <span class="odido">Kolor:</span> </label>
+      <input type="color" name="color" />
+      <br />
+      <br />
+      <label for="data_produkcji"
+        ><span class="odido">Data produkcji:</span></label
+      >
+      <input type="datetime-local" name="data_produkcji" /> <br />
+      <br />
+      <label for="szybkie_ładowanie"
+        ><span class="odido">Szybkie ładowanie:</span> 0W</label
+      >
+      <input type="range" minlength="0" maxlength="150" step="1" /> 150W
+      <br />
+      <br />
+      <fieldset>
+        <legend>Inne:</legend>
+        <br />
+        <span class="odido">
+          <label>
+            <input type="checkbox" name="dual-sim" value="dual-sim" />
+            dual-sim</label
+          ></span
+        >
+        <span class="odido">
+          <label>
+            <input type="checkbox" name="5G" value="5G" />
+            5G</label
+          ></span
+        >
+        <span class="odido">
+          <label>
+            <input type="checkbox" name="Gorilla-glass" value="Gorilla-glass" />
+            Gorilla-glass</label
+          ></span
+        ><br />
+      </fieldset>
+      <br />
+      <br />
+      <span class="odido"><button type="submit">filtruj</button></span>
+      <button type="reset">usuń filtry</button>
+    </form>
+  </body>
+</html>

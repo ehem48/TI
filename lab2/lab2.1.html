@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Wyszukaj produkt</h1>
+        <input type="text" placeholder="Nazwa produktu"><br><br>
+        <fieldset><legend>
+            <label>Cena</label></legend><br>
+            <label>od</label>
+            <input type="number"> do <input type="number">
+            <select id="contact" name="contact" multiple size="1">
+            <optgroup>
+                <option value="pln">PLN</option>
+                <option value="dol">$</option>
+            </optgroup>
+            </select>
+            
+        </fieldset><br>
+
+        <fieldset>
+            <legend>
+                <label>Ocena produktu</label></legend><br>
+                <input type="radio">5,0 ⭐⭐⭐⭐⭐<br>
+                <input type="radio">4,0 ⭐⭐⭐⭐<br>
+                <input type="radio">3,0 ⭐⭐⭐<br>
+                <input type="radio">2,0 ⭐⭐<br>
+                <input type="radio">1,0 ⭐<br>
+
+           
+        </fieldset>
+        <hr>
+        <label>Kolor</label>
+        <input type="color"><br><br>
+
+        <label>Data produkcji</label>
+        <input type="date"><br><br>
+
+        <label>Szybkie ładowanie </label> &nbsp;&nbsp;0W<input type="range" name="points" min="1" max="10">150W
+        <br><br>
+        <fieldset>
+            <legend><label>Inne: </label><br></legend>
+            <label><input type="checkbox">dual sim</label>
+            <label><input type="checkbox">5G</label>  
+            <label><input type="checkbox">Gorilla glass</label>
+        </fieldset>
+        <br><br>
+        <button type="submit">filtruj</button>&nbsp;
+        <button type="reset">usuń filtry</button>
+</body>
+</html>

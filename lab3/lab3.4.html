@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Inheritance</title>
+ <link rel="stylesheet" href="cascade.css">
+ <style>
+    section {
+ border: 1px dashed red;
+ color: red;
+ }
+ p.all{
+    border: inherit;
+    all: inherit;
+ }
+ </style>
+</head>
+<body>
+ <section>
+ Ten element będzie obramowany i będzie posiadał
+ czerwoną czcionkę.
+ <p>
+ Ten element nie będzie obramowany, ale będzie
+ posiadał czerwoną czcionkę.
+ </p>
+ </section>
+</body>
+</html>

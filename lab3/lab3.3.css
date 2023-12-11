@@ -1,0 +1,27 @@
+body{
+    background-color: #5d4e49;
+    
+    font-family: Corbel;
+    
+}
+
+h1{
+    color: #e4d3ce;
+}
+
+input{
+    border-radius: 10px;
+}
+
+#contact{
+    border-radius: 10px;
+}
+
+fieldset{
+    border-radius: 10px;
+}
+
+button{
+    background-color: #414141;
+    border-radius: 10px;
+}

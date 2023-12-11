@@ -1,0 +1,17 @@
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.row-stripes tr:nth-child(even), 
+.col-stripes td:nth-child(even){
+    background-color: #73BBE6;
+}
+
+.row-stripes thead th, 
+.col-stripes thead th{
+    background-color: #666652;
+}

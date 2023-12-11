@@ -1,0 +1,27 @@
+body{
+    background-color: #0033A0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Open Sans;
+    color: white;
+    margin-left: 50px;
+}
+
+
+input{
+    border-radius: 10px;
+}
+
+fieldset{
+     border-radius: 25px;
+     border-top: 10px white solid;
+     text-align: left;
+}
+
+button{
+    border-radius: 10px;
+    font-family: Open Sans;
+    width: 100px;
+    height:30px;
+    color: blue;
+}

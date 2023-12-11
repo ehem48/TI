@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+:root {
+  --form-control-color: rebeccapurple;
+  --form-control-disabled: #959495;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+.form-control--disabled {
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  animation-name: zmiana;
+  animation-duration: 2s;
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+
+}
+
+@keyframes zmiana {
+  100% {
+    transform: scale(2);
+    --form-control-color: green;
+  }
+}
+
+.przycisk{
+  animation-name: przycisk;
+  border-radius: 50px;
+  animation-duration: 2s;
+  width: 120px;
+  height: 60px;
+}
+
+@keyframes przycisk {
+  100%{
+    transform: scale(1.2);
+    border-color: green;
+  }
+}
+
+*{
+      margin:0;
+      padding:0;
+    }
+.container {
+      background: #f0f0f0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    .box {
+      border-radius: 20px;
+      width: 280px;
+      height: 470px;
+      background: #f0f0f0;
+      box-shadow:  0 0 0 #cccccc,
+                   0 0 0 #ffffff,
+                    10px 10px 10px #cccccc inset,
+                    -10px -10px 10px #ffffff inset;
+      animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+      /* animation-fill-mode: forwards; */
+    }
+
+    @keyframes anime {
+      0% {
+        width: 280px;
+      height: 470px;
+        background: #f0f0f0;
+        box-shadow:  0 0 0 #cccccc,
+                     0 0 0 #ffffff,
+                      10px 10px 10px #cccccc inset,
+                      -10px -10px 10px #ffffff inset;
+      }
+      25% {
+        width: 280px;
+      height: 470px;
+        background: #f8f8f8;
+        box-shadow:  10px 10px 10px #cccccc,
+                     10px 10px 10px #ffffff,
+                     0 0 0 #cccccc inset,
+                     0 0 0 #ffffff inset;
+      }
+      50% {
+        width: 350px;
+        height: 440px;
+        background: #f8f8f8;
+        box-shadow:  10px 10px 10px #cccccc,
+                     10px 10px 10px #ffffff,
+                     0 0 0 #cccccc inset,
+                     0 0 0 #ffffff inset;
+      }
+      100% {
+        width: 680px;
+        height: 340px;
+        background: #fafafa;
+        box-shadow:  40px 40px 40px #cccccc,
+                     0 0 0 #ffffff,
+                     0 0 0 #cccccc inset,
+                     2px 2px 2px #ffffff inset;
+      }
+    }
+
+
+</style>
+</head>
+
+<body>
+
+<form action="">
+    <div class="container">
+        <div class="box">
+    <label class="form-control">
+      <input type="checkbox" name="checkbox" />
+      Checkbox
+    </label>
+  
+    <label class="form-control">
+      <input type="checkbox" name="checkbox-checked" checked />
+      Checkbox - checked
+    </label>
+  
+    <label class="form-control form-control--disabled">
+      <input type="checkbox" name="checkbox-disabled" disabled />
+      Checkbox Disabled
+    </label>
+  
+    <label class="form-control form-control--disabled">
+      <input type="checkbox" name="checkbox-disabled-checked" checked disabled />
+      Checkbox Disabled - checked
+    </label>
+
+    <button type="submit" class="przycisk"> ✔</button>
+    </div>
+    </div>  
+  </form>
+</body>
+</html>

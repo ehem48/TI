@@ -1,0 +1,29 @@
+
+   h1 {
+    font-size: 60pt;
+   }
+   #thisOne {
+    color: brown;
+   }
+   #thisOne h1 {
+    font-size: 60pt;
+    color: chocolate;
+   }
+   #thatOne {
+   color: black;
+ font-size: 10pt;
+}
+button {
+ background-color: chocolate;
+ color: beige;
+ border: 0px;
+ border-radius: 10px;
+}
+#thirdOne {
+ color: black;
+ font-weight: bold;
+}
+section p {
+ color: black;
+ font-family: Corbel;
+}
